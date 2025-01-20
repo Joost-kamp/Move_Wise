@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}Resultaten - Duurzame Reis{% endblock %}
+
+{% block content %}
+    {% if travel_options %}
+      <div class="container">
+        <h1>Gevonden reizen</h1>
+        <div class="trip-summary">
+          Van {{ origin }} naar {{ destination }}
+        </div>
+        {% set colors = ['#2ECC71', '#27AE60', '#F1C40F', '#E74C3C'] %}
+        {% for option in travel_options|sort(attribute='co2') %}
+        <div class="trip-card">
+          <div class="trip-color" style="background-color: {{ colors[loop.index0 if loop.index0 < colors|length else colors|length - 1] }};">
+          </div>
+          <div class="trip-details">
+            <h2>{{ option.type }}</h2>
+            <ul>
+              <li>Reistijd: {{ option.time }}</li>
+              <li>Afstand: {{ option.distance }}</li>
+              <li>Kosten: {{ option.cost }}</li>
+              <li>CO2-uitstoot: {{ option.co2 }} kg CO2/km</li>
+            </ul>
+          </div>
+          <div class="trip-tag">CO2</div>
+        </div>
+        {% endfor %}
+      </div>
+  {% else %}
+    <p>Geen reisopties beschikbaar. Vul het formulier in op de Home-pagina om te zoeken naar reizen.</p>
+  {% endif %}
+
+{% endblock %}

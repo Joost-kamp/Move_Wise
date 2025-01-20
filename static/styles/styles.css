@@ -1,0 +1,200 @@
+/* Algemene stijlen */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F9F9F9;
+}
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.form {
+  background-color: #FFF6FF;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #333;
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 1rem;
+  background-color: #FFF;
+  color: #333;
+}
+
+.form-input::placeholder {
+  color: #AAA;
+}
+
+.form-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #FF8BA7;
+  color: #FFF;
+  border: none;
+  border-radius: 15px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.form-button:hover {
+  background-color: #FF6780;
+}
+
+.optional {
+  font-size: 0.8rem;
+  color: #999;
+}
+
+/* Iconen en extra layout */
+.icon {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background-color: #FFD8E8;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #FFF;
+  padding: 10px 0;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.nav-item {
+  font-size: 0.9rem;
+  color: #666;
+  text-align: center;
+}
+
+.nav-item span {
+  display: block;
+  margin-top: 5px;
+}
+
+.nav-item.active {
+  color: #FF8BA7;
+}
+
+/* Stijlen voor de resultatenpagina */
+.container h1 {
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.trip-summary {
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+  background-color: #FFF6FF;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.trip-card {
+  display: flex;
+  align-items: center;
+  margin: 15px auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+
+.trip-color {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.trip-details {
+  flex: 1;
+  margin-left: 15px;
+}
+
+.trip-details h2 {
+  font-size: 1.2rem;
+  color: #333;
+  margin: 0 0 5px;
+}
+
+.trip-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.trip-details ul li {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.trip-tag {
+  background-color: #333;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 15px;
+  margin-left: 10px;
+  text-transform: uppercase;
+}
+
+.footer-nav {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid #ccc;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.nav-item:hover {
+  color: #007BFF;
+}

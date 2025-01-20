@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{% block title %}Home - Duurzame Reis{% endblock %}
+
+{% block content %}
+<h1>Vind hier jouw duurzame reis!</h1>
+<form class="form" method="POST" action="/results">
+  <label class="form-label" for="origin">Van</label>
+  <select class="form-input" id="origin" name="origin" required>
+    <option value="" disabled selected>Kies een stad</option>
+    <option value="Amsterdam">Amsterdam</option>
+    <option value="Barcelona">Barcelona</option>
+    <option value="Kopenhagen">Kopenhagen</option>
+    <option value="Parijs">Parijs</option>
+    <option value="Berlijn">Berlijn</option>
+  </select>
+
+  <label class="form-label" for="destination">Naar</label>
+  <select class="form-input" id="destination" name="destination" required>
+    <option value="" disabled selected>Kies een stad</option>
+    <option value="Amsterdam">Amsterdam</option>
+    <option value="Barcelona">Barcelona</option>
+    <option value="Kopenhagen">Kopenhagen</option>
+    <option value="Parijs">Parijs</option>
+    <option value="Berlijn">Berlijn</option>
+  </select>
+
+  <label class="form-label" for="departure_date">Vertrek datum</label>
+  <input class="form-input" type="date" id="departure_date" name="departure_date" required />
+
+  <label class="form-label" for="departure_time">Vertrek tijd</label>
+  <input class="form-input" type="time" id="departure_time" />
+
+  <label class="form-label" for="return_date">Terugreis</label>
+  <input class="form-input" type="date" id="return_date" name="return_date" required/>
+
+  <label class="form-label" for="passengers">Aantal personen</label>
+  <input class="form-input" type="number" id="passengers" name="passengers" value="1" min="1" />
+
+  <button class="form-button" type="submit">Zoek reis</button>
+</form>
+{% endblock %}
