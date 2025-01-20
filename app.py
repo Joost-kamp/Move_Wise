@@ -5,8 +5,8 @@ import datetime
 
 app = Flask(__name__)
 
-GOOGLE_MAPS_API_KEY = "AIzaSyDkZhJTEzhOkJqMnI5vA3YU65RUMtdHpIQ"
-SERPAPI_API_KEY = "2b7941545f1f266720f97944576f3b781c277c5640a733b02165998ae4949f53"
+GOOGLE_MAPS_API_KEY = "API-key"
+SERPAPI_API_KEY = "API-key"
 
 
 @app.route('/')
